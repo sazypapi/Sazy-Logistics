@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.358),
+    rgba(164, 180, 194, 0.37),
+    rgba(164, 180, 194, 0.24),
+    rgba(65, 135, 158, 0.306),
+    rgba(161, 140, 71, 0.342),
+    white
+  );
+}
+.landingpage {
+  background-color: rgba(0, 0, 0, 0.772);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: rgb(35, 69, 99);
+  font-size: 2em;
+  background-image: url(/pics/landingpageimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landingpage > h1 {
+  background-image: linear-gradient(
+    100deg,
+    rgb(198, 212, 241),
+    rgb(212, 235, 255),
+    rgb(93, 152, 203),
+    rgb(90, 114, 134),
+    rgb(212, 235, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  height: 10vh;
+  position: static;
+}
+.threelines {
+  display: none;
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+#medcarry {
+  display: none;
+}
+.truck {
+  width: 100%;
+  height: 14vh;
+}
+button {
+  border: none;
+}
+a {
+  color: red;
+}
+.signin {
+  border: rgb(35, 69, 99) solid 0.3vh;
+  padding: 0.2rem;
+  color: rgb(35, 69, 99);
+  font-weight: 700;
+  border-radius: 7px;
+  background-color: transparent;
+  transition: background-color, color;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+.signin:hover {
+  background-color: rgb(35, 69, 99);
+  color: white;
+}
+.signin:active {
+  background-color: rgb(149, 206, 255);
+  border: none;
+  color: white;
+}
+.headlink {
+  text-decoration: none;
+  color: rgb(35, 69, 99);
+  font-weight: 600;
+  margin-right: 2vw;
+  font-family: "Titillium Web", sans-serif;
+}
+.headerlinks > a:hover {
+  border-bottom: 0.4vh solid rgb(35, 69, 99);
+  cursor: pointer;
+}
+.headerlinks > a:active {
+  cursor: all-scroll;
+  color: rgb(149, 206, 255);
+  border: none;
+}
+.sidebarbig {
+  position: fixed;
+  width: 100%;
+  height: 90vh;
+  z-index: fixed;
+  display: flex;
+  visibility: hidden;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.sidehead {
+  display: flex;
+  height: 7vh;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.sidebar.show {
+  transform: translateX(0px);
+}
+.sidebarbig.show {
+  visibility: visible;
+}
+.sideicon {
+  background-color: transparent;
+  height: 7vh;
+  width: 5vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: none;
+  font-weight: 500;
+  color: silver;
+}
+.sidebar {
+  height: 90vh;
+  width: 100vw;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top left,
+    rgb(35, 88, 99),
+    rgb(35, 74, 99),
+    rgb(35, 40, 99)
+  );
+  transform: translateX(-100vw);
+  transition-duration: 1s;
+}
+.sidebar > div {
+  margin-bottom: 3vh;
+}
+.sidebar > h2 {
+  color: silver;
+  text-shadow: -1px 3px 7px rgba(192, 192, 192, 0.189);
+  margin-bottom: 10vh;
+}
+.sidea {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: rgb(227, 225, 225);
+  text-decoration: overline;
+}
+.sidea .signin2 {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: rgb(227, 225, 225);
+  border: silver 0.4vh solid;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+.secondpage {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  padding: 1rem;
+}
+
+.secondpageimage {
+  width: 45%;
+  height: 80vh;
+}
+.secondpagetext {
+  width: 35%;
+}
+.secondpageimage > img {
+  width: 100%;
+  height: 75vh;
+}
+.secondpagetext > h1 {
+  margin-bottom: 5vh;
+  color: rgb(35, 69, 99);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.secondpagetext > p {
+  font-weight: 500;
+  font-size: 1.1em;
+  font-family: "Titillium Web", sans-serif;
+}
+.thirdsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  border-bottom: 0.7vh solid rgb(227, 225, 225);
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgba(158, 154, 150, 0.208);
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: rgba(35, 99, 99, 0.525) 0px 5px 15px;
+  font-family: "Titillium Web", sans-serif;
+}
+.gridsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.fourthsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: max-content;
+  padding: 1rem;
+  border-bottom: 0.7vh solid rgb(227, 225, 225);
+  padding: 2rem;
+}
+.fourthsectiontext,
+.fourthsectionimage {
+  width: 45%;
+}
+.fourthsectionimage > img {
+  width: 100%;
+  height: 80vh;
+}
+.fourthsectiontext {
+  display: flex;
+  flex-direction: column;
+}
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3vh;
+  font-family: "Titillium Web", sans-serif;
+}
+.section4text > h2 {
+  color: rgb(35, 69, 99);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.section4img {
+  margin-right: 2vw;
+}
+.secondsection4 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+.innersection24 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(158, 154, 150, 0.616);
+  width: 90%;
+  text-align: center;
+}
+.bot {
+  margin-top: 10vh;
+}
+.signin2:hover {
+  background-color: silver;
+  color: slateblue;
+}
+.fourthpage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  color: rgb(35, 69, 99);
+  height: max-content;
+  padding: 2rem;
+  /* border: 1px solid black; */
+}
+.fourthpage > h1 {
+  font-size: 2.5em;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.carousel {
+  background-color: aliceblue;
+  height: max-content;
+  margin-bottom: 5vh;
+  
+}
+.carousel-cell {
+  width: 66%;
+  height: max-content;
+  border-radius: 5px;
+  margin: 1rem;
+  /* padding: 0.1rem; */
+  box-shadow: rgba(18, 122, 147, 0.16) 0px 3px 6px,
+    rgba(113, 191, 194, 0.23) 0px 3px 6px;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+  background-color: aliceblue;
+}
+.carousel-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+.carousel-inside > h4,
+.accordionfirst > h4,
+.accordionfirst2 > h4,
+.accordionfirst3 > h4,
+.accordionfirst4 > h4,
+.accordionfirst5 > h4 {
+  font-size: 1.5em;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.carousel-inside > q {
+  font-size: 1.1em;
+}
+.fifthpage > h1 {
+  font-size: 3em;
+  color: rgb(35, 69, 99);
+  margin-bottom: 5vh;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.fifthpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.accordion,
+.accordion2,
+.accordion3,
+.accordion4,
+.accordion5 {
+  width: 90%;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+  padding: 1rem;
+  background: white;
+  margin-bottom: 5vh;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.accordion:hover,
+.accordion2:hover,
+.accordion3:hover,
+.accordion4:hover,
+.accordion5:hover {
+  cursor: pointer;
+  background-color: rgba(231, 243, 255, 0.605);
+}
+.accordionfirst,
+.accordionfirst2,
+.accordionfirst3,
+.accordionfirst4,
+.accordionfirst5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+.accordionbtn,
+.accordionbtn2,
+.accordionbtn3,
+.accordionbtn4,
+.accordionbtn5 {
+  width: 5vw;
+  height: 10vh;
+  font-size: 2.5em;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 400;
+}
+.accordionsecond,
+.accordionsecond2,
+.accordionsecond3,
+.accordionsecond4,
+.accordionsecond5 {
+  display: none;
+  width: 100%;
+}
+.accordionsecond > p,
+.accordionsecond2 > p,
+.accordionsecond3 > p,
+.accordionsecond4 > p,
+.accordionsecond5 > p {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: rgb(35, 69, 99);
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    to right,
+    rgb(12, 40, 65),
+    rgb(35, 69, 99),
+    rgb(6, 21, 35)
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Titillium Web", sans-serif;
+}
+.loclink {
+  color: blue;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.exitbtnaccordion {
+  transform: rotate(45deg);
+}
+.exitaccordion {
+  display: inline-block;
+}
+
+h4 {
+  color: rgb(35, 69, 99);
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    to top right,
+    rgb(60, 103, 141),
+    rgb(35, 69, 99),
+    rgb(6, 21, 35)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bottom {
+  border-bottom: 0.5vh solid silver;
+  padding-bottom: 1rem;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(35, 69, 99, 0.9);
+  /* visibility: 0; */
+  color: white;
+  padding: 1rem;
+  height: 60vh;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-between;
+  font-family: "Titillium Web", sans-serif;
+}
+.dadfoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+}
+.footerh3 {
+  color: white;
+  text-align: center;
+}
+a {
+  color: white;
+}
+.footmail {
+  margin: 1rem;
+}
+.secondsectionfoter {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  bottom: 1px solid red;
+}
+.secondsectionfoterimg {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.footericons {
+  margin-right: 1vw;
+  margin-left: 0;
+}
+.space {
+  margin-bottom: 1vh;
+}
+#fouy {
+  color: white;
+}
+.last {
+  display: none;
+}
+/*MEDIA QUERY*/
+@media screen and (max-width: 683px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  .firstsectionfooter {
+    display: none;
+  }
+  .med {
+    display: inline;
+  }
+  .textsection {
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 5vh;
+  }
+  .secondsection {
+    flex-direction: column;
+  }
+  .h32 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 627px) {
+  header {
+    align-items: center;
+    align-content: center;
+  }
+
+  .landingpage {
+    height: 90vh;
+    padding: 2rem;
+  }
+
+  .med,
+  .spa {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.3em;
+    text-align: center;
+    /* border-bottom: 0.4vh solid silver; */
+  }
+  .notneeded {
+    display: none;
+  }
+  .firsth3 {
+    text-align: center;
+  }
+  .headlink {
+    display: none;
+  }
+  header {
+    flex-direction: row-reverse;
+    /* position: fixed; */
+  }
+  .signin {
+    display: none;
+  }
+  .disappear {
+    /* display: none; */
+  }
+  header {
+    align-items: center;
+  }
+  .threelines {
+    display: inline-block;
+  }
+  .phonefooter {
+    text-align: center;
+    line-height: 5vh;
+  }
+  .phonefooter {
+    display: inline-block;
+  }
+  footer {
+    height: max-content;
+    background-color: rgb(35, 69, 99);
+  }
+  .firstsectionfooter {
+    display: none;
+  }
+  .dadfoot {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .dadfoot > div {
+    margin: 1rem;
+  }
+  .footmail {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .secondpagetext {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .secondpageimage {
+    display: none;
+  }
+  .secondpagetext {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .secondpage {
+    flex-direction: column-reverse;
+    height: max-content;
+  }
+  .secondpageimage {
+    width: 90%;
+  }
+  .secondpagetext {
+    width: 90%;
+    text-align: center;
+    box-shadow: rgba(35, 99, 99, 0.525) 0px 5px 15px;
+    background-color: rgba(245, 245, 220, 0.438);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .secondpage > h1 {
+    /* font-size: 2.4em; */
+  }
+}
+@media screen and (max-width: 680px) {
+  .secondpagetext > h1 {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 791px) {
+  .gridsection > h2 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fourthsection {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+  .fourthsection {
+    background-image: url(/pics/truck-3401529.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fourthsectiontext {
+    width: 100%;
+    margin: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.573); */
+  }
+  .fourthsectionimage {
+    display: none;
+  }
+  .section4 {
+    box-shadow: rgba(35, 99, 99, 0.525) 0px 5px 15px;
+    padding: 1rem;
+    background-color: rgba(240, 248, 255, 0.749);
+  }
+  .fourthsectionimage > img {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 565px) {
+  .getout {
+    display: none;
+  }
+  .accordionfirst > h4,
+  .accordionfirst2 > h4,
+  .accordionfirst3 > h4,
+  .accordionfirst4 > h4,
+  .accordionfirst5 > h4 {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 330px) {
+  .landingpage,
+  header,
+  .secondpage,
+  .thirdpage,
+  .fourthpage,
+  .fifthpage,
+  footer {
+    display: none;
+  }
+}

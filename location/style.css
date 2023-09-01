@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  height: 10vh;
+  position: static;
+}
+#medcarry {
+  display: none;
+}
+.truck {
+  width: 100%;
+  height: 14vh;
+}
+button {
+  border: none;
+}
+a {
+  color: red;
+}
+.signin {
+  border: rgb(35, 69, 99) solid 0.3vh;
+  padding: 0.2rem;
+  color: rgb(35, 69, 99);
+  font-weight: 700;
+  border-radius: 7px;
+  background-color: transparent;
+  transition: background-color, color;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 600;
+}
+.signin:hover {
+  background-color: rgb(35, 69, 99);
+  color: white;
+}
+.signin:active {
+  background-color: rgb(149, 206, 255);
+  border: none;
+  color: white;
+}
+.headlink {
+  text-decoration: none;
+  color: rgb(35, 69, 99);
+  font-weight: 500;
+  margin-right: 2vw;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+.headerlinks > a:hover {
+  border-bottom: 0.4vh solid rgb(35, 69, 99);
+  cursor: pointer;
+}
+.headerlinks > a:active {
+  cursor: all-scroll;
+  color: rgb(149, 206, 255);
+  border: none;
+}
+.threelines {
+  display: none;
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+.sidebarbig {
+  position: fixed;
+  width: 100%;
+  height: 90vh;
+  z-index: fixed;
+  display: flex;
+  visibility: hidden;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.sidehead {
+  display: flex;
+  height: 7vh;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.sidebar.show {
+  transform: translateX(0px);
+}
+.sidebarbig.show {
+  visibility: visible;
+}
+.sideicon {
+  background-color: transparent;
+  height: 7vh;
+  width: 5vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: none;
+  font-weight: 500;
+  color: silver;
+}
+.sidebar {
+  height: 90vh;
+  width: 100vw;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top left,
+    rgb(35, 88, 99),
+    rgb(35, 74, 99),
+    rgb(35, 40, 99)
+  );
+  transform: translateX(-100vw);
+  transition-duration: 1s;
+}
+.sidebar > div {
+  margin-bottom: 3vh;
+}
+.sidebar > h2 {
+  color: silver;
+  text-shadow: -1px 3px 7px rgba(192, 192, 192, 0.189);
+  margin-bottom: 10vh;
+}
+.sidea {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: rgb(227, 225, 225);
+  text-decoration: overline;
+}
+.sidea .signin2 {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: rgb(227, 225, 225);
+  border: silver 0.4vh solid;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+.bot {
+  margin-top: 10vh;
+}
+.signin2:hover {
+  background-color: silver;
+  color: slateblue;
+}
+
+.thirdpage {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  width: 100%;
+  height: 90vh;
+}
+.thirdpage > h3,
+.secondpage > h3 {
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 2em;
+  color: rgb(35, 69, 99);
+}
+p {
+  font-size: 0.9em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(35, 69, 99, 0.9);
+  /* visibility: 0; */
+  color: white;
+  padding: 1rem;
+  height: 60vh;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-between;
+  font-family: "Titillium Web", sans-serif;
+}
+.dadfoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+}
+.footerh3 {
+  color: white;
+  text-align: center;
+}
+a {
+  color: white;
+}
+.footmail {
+  margin: 1rem;
+}
+.secondsectionfoter {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  bottom: 1px solid red;
+}
+.secondsectionfoterimg {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.footericons {
+  margin-right: 1vw;
+  margin-left: 0;
+}
+.space {
+  margin-bottom: 1vh;
+}
+#fouy {
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 0.4vh solid silver;
+  }
+  .firsth3 {
+    text-align: center;
+  }
+  .headlink {
+    display: none;
+  }
+  header {
+    flex-direction: row-reverse;
+    /* position: fixed; */
+  }
+  .signin {
+    display: none;
+  }
+  .disappear {
+    display: none;
+  }
+  header {
+    align-items: center;
+  }
+  .threelines {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 683px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  .firstsectionfooter {
+    display: none;
+  }
+  .med {
+    display: inline;
+  }
+  .textsection {
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 5vh;
+  }
+  .secondsection {
+    flex-direction: column;
+  }
+  .h32 {
+    text-align: center;
+  }
+}
