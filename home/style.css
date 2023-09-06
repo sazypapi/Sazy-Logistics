@@ -140,13 +140,14 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 2vh 2vw;
+  padding: 4vh 2vw;
   height: max-content;
   /* background-color: aliceblue; */
   width: 100%;
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-bottom: 0.7vh solid silver;
   /* background-image: linear-gradient(to bottom, rgb(35, 69, 99), white, white, white); */
 }
 
@@ -725,16 +726,23 @@ a {
   .secondsectionimg > img {
     display: none;
   }
+  .thirdpage{
+    display: none;
+  }
+  iframe{
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    display: none;
+  }
   .secondpage {
-    background-image: url(/pics/canada-784392.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
   .textsection {
-    background-color: rgba(186, 182, 182, 0.904);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-      width: 100%;
+    background-color: rgba(224, 220, 220, 0.831);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 2vh;
   }
   .secondsection {
     background-color: none;
@@ -742,6 +750,7 @@ a {
   }
   #p2 {
     font-weight: 500;
+    font-size: 1em
   }
 }
 @media screen and (max-width: 565px) {

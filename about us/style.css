@@ -561,7 +561,7 @@ a {
   }
 
   .landingpage {
-    height: 90vh;
+    height: 70vh;
     padding: 2rem;
   }
 
@@ -685,7 +685,6 @@ a {
     text-align: center;
   }
   .fourthsection {
-    background-image: url(/pics/truck-3401529.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -700,6 +699,7 @@ a {
   .section4 {
     box-shadow: rgba(35, 99, 99, 0.525) 0px 5px 15px;
     padding: 1rem;
+    border-radius: 10px;
     background-color: rgba(240, 248, 255, 0.749);
   }
   .fourthsectionimage > img {
